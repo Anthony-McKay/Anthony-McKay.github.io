@@ -1,0 +1,126 @@
+/* New Avengers – Index stylesheet */
+body {
+  background-color: rgb(210, 150, 32);
+  background-image: url('bg.jpg');
+  background-repeat: repeat-y;      /* rings run down the left only */
+  background-position: left top;
+  background-attachment: fixed;     /* rings stay put when you scroll */
+  color: #000;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 2rem 2rem 2rem 120px;    /* top right bottom LEFT */
+}
+
+/* THE NEW AVENGERS heading */
+.Series {
+  color: blue;
+  font-family: Arial, sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+/* Season */
+.Season {
+  font-family: Arial, sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: black;
+  margin: 2rem 0 0.5rem 0;
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.2rem;
+}
+
+/* Episode */
+.Episode {
+  font-family: Arial, sans-serif;
+  font-size: 14pt;
+  color: blue;
+}
+
+/* NavLink – bold yellow, never changes colour */
+.NavLink,
+.NavLink:link,
+.NavLink:visited,
+.NavLink:hover,
+.NavLink:active {
+  font-family: Arial, sans-serif;
+  font-size: 16pt;
+  color: #FFFF99;      /* your original ITC yellow */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* --- Stop links changing colour --- */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+/* 1. AVLAND – yellow links */
+a[href^="a.htm"]:link,
+a[href^="a.htm"]:visited,
+a[href^="b.htm"]:link, a[href^="b.htm"]:visited,
+a[href^="c.htm"]:link, a[href^="c.htm"]:visited,
+a[href^="d.htm"]:link, a[href^="d.htm"]:visited,
+a[href^="e.htm"]:link, a[href^="e.htm"]:visited,
+a[href^="f.htm"]:link, a[href^="f.htm"]:visited,
+a[href^="g.htm"]:link, a[href^="g.htm"]:visited,
+a[href^="h.htm"]:link, a[href^="h.htm"]:visited,
+a[href^="i.htm"]:link, a[href^="i.htm"]:visited,
+a[href^="j.htm"]:link, a[href^="j.htm"]:visited,
+a[href^="k.htm"]:link, a[href^="k.htm"]:visited,
+a[href^="l.htm"]:link, a[href^="l.htm"]:visited,
+a[href^="m.htm"]:link, a[href^="m.htm"]:visited,
+a[href^="n.htm"]:link, a[href^="n.htm"]:visited,
+a[href^="o.htm"]:link, a[href^="o.htm"]:visited,
+a[href^="p.htm"]:link, a[href^="p.htm"]:visited,
+a[href^="q.htm"]:link, a[href^="q.htm"]:visited,
+a[href^="r.htm"]:link, a[href^="r.htm"]:visited,
+a[href^="about.htm"]:link, a[href^="about.htm"]:visited {
+  color: #ffff99;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* 2. ACTION – white links for actioncity/ */
+a[href^="actioncity/"]:link,
+a[href^="actioncity/"]:visited,
+a[href^="actioncity/"]:hover,
+a[href^="actioncity/"]:active,
+.Action {
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* 3. INTERNATIONAL – world/ links */
+a[href^="world/"]:link,
+a[href^="world/"]:visited,
+a[href^="world/"]:hover,
+a[href^="world/"]:active,
+.International {
+  color: #ffcc99;  /* that pinkish peach from your original */
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+td {
+  vertical-align: baseline;   /* lines up the first line of each cell */
+  padding: 8px 8px 12px 8px;  /* a bit more space below each row */
+}
+
+td:first-child {
+  width: 240px;
+  padding-right: 20px;
+  color: blue;
+  font-weight: bold;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+td:last-child {
+  padding-left: 10px;
+  vertical-align: baseline;
+}
+

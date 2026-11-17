@@ -1,0 +1,124 @@
+/* New Avengers – Index stylesheet */
+body {
+  background-color: rgb(210, 150, 32);
+  background-image: url('bg.jpg');
+  background-repeat: repeat-y;      /* rings run down the left only */
+  background-position: left top;
+  background-attachment: fixed;     /* rings stay put when you scroll */
+  color: #000;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 2rem 2rem 2rem 120px;    /* top right bottom LEFT */
+}
+
+/* THE NEW AVENGERS heading */
+.Series {
+  color: blue;
+  font-family: Arial, sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+/* Season*/
+.Season {
+  font-family: Arial, sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  color: black;
+  margin: 2rem 0 0.5rem 0;
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.2rem;
+}
+
+/* Episode*/
+.Episode {
+  font-family: Arial, sans-serif;
+  font-size: 14pt;
+  color: #FFFF99;
+}
+
+/* NavLink – bold yellow, never changes colour */
+.NavLink,
+.NavLink:link,
+.NavLink:visited {
+  font-family: Arial, sans-serif;
+  font-size: 16pt;
+  color: #FFFF99;      /* your original ITC yellow */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.NavLink:hover,
+.NavLink:active {
+  color: #FFFF99;      /* stays yellow on hover/click */
+  text-decoration: none;
+
+
+
+
+/* --- Stop links changing colour --- */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+/* 1. AVLAND */
+a[href^="a.htm"],
+a[href^="b.htm"],
+a[href^="c.htm"],
+a[href^="d.htm"],
+a[href^="e.htm"],
+a[href^="f.htm"],
+a[href^="g.htm"],
+a[href^="h.htm"],
+a[href^="i.htm"],
+a[href^="l.htm"],
+a[href^="k.htm"],
+a[href^="l.htm"],
+a[href^="m.htm"],
+a[href^="n.htm"],
+a[href^="o.htm"],
+a[href^="p.htm"],
+a[href^="q.htm"],
+a[href^="r.htm"],
+a[href^="about.htm"] {
+  color: #ffff99;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* 2. ACTION – white links for actioncity/ */
+a[href^="actioncity/"],
+.Action {
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* 3. INTERNATIONAL – world/ links */
+a[href^="world/"],
+.International {
+  color: #ffcc99;  /* that pinkish peach from your original */
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+td {
+  vertical-align: baseline;   /* <-- this lines up the first line of each cell */
+  padding: 8px 8px 12px 8px;  /* a bit more space below each row */
+}
+
+td:first-child {
+  width: 240px;
+  padding-right: 20px;
+  color: blue;
+  font-weight: bold;
+  white-space: nowrap;
+  /* keep it at the top line */
+  vertical-align: baseline;
+}
+
+td:last-child {
+  padding-left: 10px;
+  vertical-align: baseline;
+
